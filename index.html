@@ -111,13 +111,39 @@
           </div>
         </div>
         <form class="contact-form" name="contact" action="#" method="post">
-          <label>Business Name<input type="text" name="business-name" autocomplete="organization" required></label>
-          <label>Owner Name<input type="text" name="owner-name" autocomplete="name" required></label>
-          <label>Phone Number<input type="tel" name="phone" autocomplete="tel" required></label>
-          <label>Email<input type="email" name="email" autocomplete="email" required></label>
-          <label>Service Needed<select name="service-needed" id="serviceNeeded" required><option value="">Select a service</option><option>Website Creation</option><option>Google Business Profile Optimization</option><option>Local SEO</option><option>Social Media Setup</option><option>Online Booking</option><option>Customer Review Systems</option><option>AI Automation</option><option>Website Review</option><option>Not Sure Yet</option></select></label>
-          <button class="btn btn-primary" type="submit">Send Request</button>
-          <p class="form-message" role="status" aria-live="polite"></p>
+          <section id="contact">
+  <h2>Contact Us</h2>
+  <p>Ready to grow your auto business?</p>
+
+  <form action="https://formspree.io/f/mykavjlj" method="POST" class="contact-form">
+    <label for="name">Full Name</label>
+    <input id="name" name="name" type="text" placeholder="Your name" required>
+
+    <label for="business">Business Name</label>
+    <input id="business" name="business" type="text" placeholder="Your auto shop name">
+
+    <label for="phone">Phone Number</label>
+    <input id="phone" name="phone" type="tel" placeholder="Your phone number">
+
+    <label for="email">Email Address</label>
+    <input id="email" name="email" type="email" placeholder="Your email" required>
+
+    <label for="service">What do you need help with?</label>
+    <select id="service" name="service" required>
+      <option value="">Choose a service</option>
+      <option value="Website Design">Website Design</option>
+      <option value="Google Business Profile">Google Business Profile</option>
+      <option value="Local SEO">Local SEO</option>
+      <option value="Review System">Review System</option>
+      <option value="AI Automation">AI Automation</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Tell me about your business..." required></textarea>
+
+    <button type="submit">Request a Free Consultation</button>
+  </form>
+</section>
         </form>
       </div>
     </section>
