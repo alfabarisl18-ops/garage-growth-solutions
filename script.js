@@ -32,4 +32,3 @@ if (form) {
       formMessage.textContent = 'Sending your request...';
     }
   });
-}
