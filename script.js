@@ -26,8 +26,8 @@ document.querySelectorAll('[data-service]').forEach((button) => {
   });
 });
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  formMessage.textContent = 'Thanks — your request is ready to send. Connect this form to your preferred email or CRM service when you deploy.';
-  form.reset();
-});
+// form.addEventListener('submit', (event) => {
+  // event.preventDefault();
+  // formMessage.textContent = 'Thanks — your request is ready to send. Connect this form to your preferred email or CRM service when you deploy.';
+  // form.reset();
+// });
