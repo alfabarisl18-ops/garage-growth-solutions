@@ -33,6 +33,8 @@ The initials-based founder card is approved for launch. An approved headshot can
 
 Deployment is intentionally manual. The existing Cloudflare Pages project should not be changed without explicit approval.
 
+Cloudflare Pages project: `garage-growth-solutions`. The production branch is `main`; pushes to other enabled branches create preview deployments.
+
 ## Project knowledge
 
 Start with `docs/index.md` for the launch checklist, acquisition scripts, free-audit template, and client delivery system. Keep real prospect and client information in the ignored `private/` directory or another private system—never in this public repository.

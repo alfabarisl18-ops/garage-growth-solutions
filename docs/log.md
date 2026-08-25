@@ -1,5 +1,11 @@
 # Project log
 
+## [2026-08-25] operations | Cloudflare production branch corrected
+
+- Found that Cloudflare Pages still treated `old-version` as the production branch, causing the approved `main` release to build only as a preview.
+- Changed the existing `garage-growth-solutions` project production branch to `main` while preserving its domain, Git connection, and automatic production deployments.
+- Documented the production branch so future approved pushes publish through the expected path.
+
 ## [2026-08-25] launch | Site approved and production preflight passed
 
 - Alpha approved the redesigned main site and fictional demo for publishing.

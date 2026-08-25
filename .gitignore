@@ -6,4 +6,5 @@ private/
 Thumbs.db
 *.log
 .playwright-cli/
+.wrangler/
 output/playwright/
