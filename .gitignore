@@ -1,0 +1,9 @@
+# Private business records must never enter the public repository.
+private/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+*.log
+.playwright-cli/
+output/playwright/

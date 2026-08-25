@@ -1,33 +1,59 @@
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('#navLinks');
-const serviceSelect = document.querySelector('#serviceNeeded');
-const form = document.querySelector('.contact-form');
-const formMessage = document.querySelector('.form-message');
+const navMenu = document.querySelector('#nav-menu');
+const auditForm = document.querySelector('[data-audit-form]');
+const formStatus = document.querySelector('[data-form-status]');
 
-document.querySelector('#year').textContent = new Date().getFullYear();
-
-navToggle.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
-  navToggle.setAttribute('aria-expanded', String(isOpen));
+document.querySelectorAll('[data-current-year]').forEach((element) => {
+  element.textContent = new Date().getFullYear();
 });
 
-navLinks.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.querySelector('.sr-only').textContent = isOpen ? 'Close navigation' : 'Open navigation';
   });
-});
 
-document.querySelectorAll('[data-service]').forEach((button) => {
-  button.addEventListener('click', () => {
-    if (serviceSelect) {
-      serviceSelect.value = button.dataset.service;
+  navMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.querySelector('.sr-only').textContent = 'Open navigation';
+    });
+  });
+}
+
+if (auditForm && formStatus) {
+  auditForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const submitButton = auditForm.querySelector('button[type="submit"]');
+    const originalButtonContent = submitButton.innerHTML;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending your request…';
+    formStatus.className = 'form-status';
+    formStatus.textContent = '';
+
+    try {
+      const response = await fetch(auditForm.action, {
+        method: 'POST',
+        body: new FormData(auditForm),
+        headers: { Accept: 'application/json' }
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      auditForm.reset();
+      formStatus.classList.add('is-success');
+      formStatus.textContent = 'Your request was sent. Alpha will follow up with the next step.';
+    } catch (error) {
+      formStatus.classList.add('is-error');
+      formStatus.textContent = 'Your request could not be sent. Please check your connection and try again.';
+    } finally {
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalButtonContent;
     }
   });
-});
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  formMessage.textContent = 'Thanks — your request is ready to send. Connect this form to your preferred email or CRM service when you deploy.';
-  form.reset();
-});
+}

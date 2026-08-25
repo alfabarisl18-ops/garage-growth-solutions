@@ -1,2 +1,38 @@
-# garage-growth-solutions
-A Website for SME in Boston
+# Bay State Auto Growth
+
+A lightweight static website for Bay State Auto Growth, founded by Alpha Barrie. It is designed to turn Greater Boston auto-shop prospects into free audit requests and showcase a complete fictional auto-shop website.
+
+Intended custom domain: `baystateautogrowth.com` (connect only after the domain is purchased and the deployment is approved).
+
+## Public pages
+
+- `/` — focused sales page and free-audit form
+- `/demo/` — fictional Bay & Beacon Auto Care website
+- `/privacy.html` — inquiry privacy notice
+
+The main form submits to the existing Formspree endpoint. The demo form is intentionally local-only and never transmits data.
+
+## Local preview
+
+From PowerShell in the repository folder:
+
+```powershell
+python -m http.server 4173
+```
+
+Then open `http://127.0.0.1:4173/`.
+
+## Before publishing
+
+1. Submit a real test inquiry and confirm Formspree notification delivery.
+2. Review all contact copy, prices, and available founding-shop spots.
+3. Update social-image URLs when the custom domain is connected.
+4. Run the validation checks described in `docs/launch-checklist.md`.
+
+The initials-based founder card is approved for launch. An approved headshot can replace it later without delaying publishing or outreach.
+
+Deployment is intentionally manual. The existing Cloudflare Pages project should not be changed without explicit approval.
+
+## Project knowledge
+
+Start with `docs/index.md` for the launch checklist, acquisition scripts, free-audit template, and client delivery system. Keep real prospect and client information in the ignored `private/` directory or another private system—never in this public repository.
