@@ -8,7 +8,7 @@ Complete these in order. Do not delay outreach preparation for lower-priority co
 
 1. [x] Use the finished initials-based founder card for launch; defer the optional headshot.
 2. [x] Complete the final website review.
-3. [ ] Publish the redesigned main site and demo only after Alpha explicitly approves publishing.
+3. [x] Publish the redesigned main site and demo after Alpha's approval.
 4. [x] Confirm the accepted Formspree test appears in the dashboard and reaches the notification email.
 5. [ ] Finish one sample one-page audit and its three-to-five-minute video.
 6. [ ] Personalize the offer sheet, service agreement, invoice, onboarding form, and delivery checklist.

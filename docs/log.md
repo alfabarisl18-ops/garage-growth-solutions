@@ -1,5 +1,11 @@
 # Project log
 
+## [2026-08-25] launch | Production site published
+
+- Published the approved redesign at `https://garage-growth-solutions.pages.dev/` through the existing Cloudflare Pages project.
+- Confirmed the production deployment is active from `main` and that the public homepage, demo, privacy page, imagery, Formspree endpoint, and demo navigation are available.
+- Left the existing Pages domain and hosting account unchanged; future approved pushes to `main` now trigger production deployments.
+
 ## [2026-08-25] operations | Cloudflare production branch corrected
 
 - Found that Cloudflare Pages still treated `old-version` as the production branch, causing the approved `main` release to build only as a preview.
