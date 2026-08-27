@@ -1,5 +1,22 @@
 # Project log
 
+## [2026-08-26] website | Three-page demo and direct-call path
+
+- Kept the Bay State homepage as a focused sales funnel while adding a clear free-audit versus $297 implementation comparison.
+- Added the public business call number, a one-click mobile call action, and a disclosed sample-audit PDF preview; left WhatsApp and the unapproved silent video unpublished.
+- Split the fictional Bay & Beacon website into Home, Services, and Contact pages with a consistent demo banner and non-submitting appointment preview.
+- Defined the owner-approved, manual website-testimonial workflow and preserved permanent sample labels on fictional reviews.
+- Confirmed the redesigned Formspree path with one clearly labeled QA submission using reserved test information; the endpoint returned success and the page displayed its success message.
+- Alpha approved the completed local preview for production publishing; final live verification follows the deployment.
+
+## [2026-08-26] sales asset | Fictional sample audit package
+
+- Created a local-only, intentionally flawed Bay & Beacon Auto Care website for an honest fictional before-and-after demonstration.
+- Updated the one-page audit with real browser screenshots from the sample before and improved demo.
+- Recorded a continuous 4:01 browser walkthrough covering desktop, mobile, trust, contact, and appointment-path differences, with a word-for-word voice script for Alpha.
+- Kept the generated fixture, PDF, video, and temporary browser evidence out of source control while retaining reusable build and recording scripts.
+- Left the final outreach-video checkbox open until Alpha re-records and approves the video in his own voice.
+
 ## [2026-08-25] launch | Production site published
 
 - Published the approved redesign at `https://garage-growth-solutions.pages.dev/` through the existing Cloudflare Pages project.

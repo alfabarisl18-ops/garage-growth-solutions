@@ -7,10 +7,14 @@ Intended custom domain: `baystateautogrowth.com` (connect only after the domain 
 ## Public pages
 
 - `/` — focused sales page and free-audit form
-- `/demo/` — fictional Bay & Beacon Auto Care website
+- `/demo/` — fictional Bay & Beacon Auto Care homepage
+- `/demo/services.html` — fictional shop services and repair process
+- `/demo/contact.html` — fictional shop contact and non-submitting appointment preview
 - `/privacy.html` — inquiry privacy notice
 
 The main form submits to the existing Formspree endpoint. The demo form is intentionally local-only and never transmits data.
+
+The public business call number is `(224) 944-4044` (`tel:+12249444044`). WhatsApp Business is intentionally deferred. The homepage links to a clearly disclosed fictional sample-audit PDF; the silent rehearsal video remains private until Alpha records and approves the narration.
 
 ## Local preview
 

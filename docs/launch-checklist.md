@@ -11,6 +11,9 @@ Complete these in order. Do not delay outreach preparation for lower-priority co
 3. [x] Publish the redesigned main site and demo after Alpha's approval.
 4. [x] Confirm the accepted Formspree test appears in the dashboard and reaches the notification email.
 5. [ ] Finish one sample one-page audit and its three-to-five-minute video.
+   - [x] Export the screenshot-backed fictional sample audit PDF.
+   - [x] Produce the matching 4:01 real-browser walkthrough and exact narration script.
+   - [ ] Re-record the video in Alpha's own voice and approve the final outreach version.
 6. [ ] Personalize the offer sheet, service agreement, invoice, onboarding form, and delivery checklist.
 7. [ ] Create the private prospect tracker and add the first 50 Greater Boston independent shops.
 8. [ ] Begin the weekly outreach rhythm and deliver the first three personalized audits.
@@ -27,8 +30,8 @@ Do not begin full outreach until every launch-gate item is complete.
 - [x] Confirm the success and connection-error messages are understandable.
 - [x] Check every navigation, demo, privacy, and audit link.
 - [x] Confirm the demo always says it is fictional and its form sends nothing.
-- [ ] Export one finished sample audit PDF using the audit template.
-- [ ] Record one sample three-to-five-minute audit video.
+- [x] Export one finished sample audit PDF using the audit template.
+- [ ] Record one sample three-to-five-minute audit video in Alpha's own voice; the 4:01 browser walkthrough and exact script are ready.
 - [ ] Personalize the one-page offer sheet in the client delivery kit.
 - [ ] Set up the Square invoice with 50% due before work and 50% at delivery.
 - [ ] Review and personalize the service agreement starter.
@@ -126,3 +129,4 @@ This work should begin after outreach is active and should not delay the first p
 - [ ] End every guide with a clear invitation to request a free shop audit.
 - [ ] Use real shop-owner questions and approved client lessons to choose future topics.
 - [ ] Prioritize approved case studies over publishing generic articles simply to maintain a schedule.
+- [ ] Add a WhatsApp Business button after the business account and public number are ready; do not show an inactive placeholder.

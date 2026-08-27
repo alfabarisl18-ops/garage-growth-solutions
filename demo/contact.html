@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fictional Bay & Beacon Auto Care contact and appointment page created as an auto-shop website demonstration by Bay State Auto Growth.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#122224">
+  <title>Contact | Bay &amp; Beacon Auto Care Demo</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <a class="skip-link" href="#demo-main">Skip to main content</a>
+
+  <aside class="demo-banner" aria-label="Demonstration notice">
+    <div class="demo-shell banner-inner">
+      <a class="demo-banner-button back-to-main" href="../index.html"><span aria-hidden="true">←</span> Back to Bay State main site</a>
+      <p><strong>Demonstration website</strong><span>Bay &amp; Beacon Auto Care is fictional.</span></p>
+      <a class="demo-banner-button creator-link" href="../index.html#about">Built by Alpha Barrie <span aria-hidden="true">→</span></a>
+    </div>
+  </aside>
+
+  <header class="demo-header" id="top">
+    <nav class="demo-nav demo-shell" aria-label="Demo website navigation">
+      <a class="shop-brand" href="index.html" aria-label="Bay and Beacon Auto Care home"><span class="shop-mark" aria-hidden="true">B<span>&amp;</span>B</span><span>Bay &amp; Beacon<strong>Auto Care</strong></span></a>
+      <button class="demo-nav-toggle" type="button" aria-expanded="false" aria-controls="demo-menu"><span class="screen-reader">Open navigation</span><i></i><i></i><i></i></button>
+      <div class="demo-menu" id="demo-menu">
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="contact.html" aria-current="page">Contact</a><a class="demo-call" href="tel:+16175550148">Call (617) 555-0148</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="demo-main">
+    <section class="page-hero contact-page-hero">
+      <div class="demo-shell page-hero-grid">
+        <div><p class="shop-eyebrow">Request service</p><h1>Tell us what<br><em>your car needs.</em></h1><p>A clear contact path helps a real shop receive the right details before the first conversation.</p></div>
+        <aside><span>Demonstration only</span><strong>This page does not send or store information.</strong><small>Use reserved fictional details when testing the form.</small></aside>
+      </div>
+    </section>
+
+    <section class="shop-section appointment-section" id="appointment">
+      <div class="demo-shell appointment-grid">
+        <div>
+          <p class="shop-eyebrow">Shop details</p><h2>Call, visit, or preview a request.</h2><p>This sample contact experience shows how a shop can make the next step obvious on both phone and desktop.</p>
+          <div class="contact-cards">
+            <div><span>Call</span><strong><a href="tel:+16175550148">(617) 555-0148</a></strong><small>Reserved fictional number</small></div>
+            <div><span>Visit</span><strong>125 Example Street</strong><small>Boston, MA 02128 · Fictional address</small></div>
+            <div><span>Hours</span><strong>Mon–Fri 7:30–6</strong><small>Saturday 8–2 · Sunday closed</small></div>
+          </div>
+        </div>
+        <form class="sample-form" data-demo-form>
+          <div class="two-fields">
+            <label for="demo-name">Your name<input id="demo-name" name="demo-name" type="text" autocomplete="name" required></label>
+            <label for="demo-phone">Phone<input id="demo-phone" name="demo-phone" type="tel" autocomplete="tel" required></label>
+          </div>
+          <label for="demo-vehicle">Vehicle<input id="demo-vehicle" name="demo-vehicle" type="text" placeholder="Year, make, and model" required></label>
+          <label for="demo-service">What do you need help with?<select id="demo-service" name="demo-service" required><option value="">Choose a service</option><option>Diagnostics</option><option>Brakes</option><option>Maintenance</option><option>Steering or suspension</option><option>Heating or A/C</option><option>State inspection</option></select></label>
+          <label for="demo-message">What is happening?<textarea id="demo-message" name="demo-message" rows="4" required></textarea></label>
+          <button class="shop-button shop-button-primary" type="submit">Preview request</button>
+          <p class="sample-form-note">Demonstration only—nothing entered here is transmitted.</p>
+          <p class="demo-form-status" role="status" aria-live="polite" data-demo-status></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="shop-section visit-section">
+      <div class="demo-shell visit-grid"><div><p class="shop-eyebrow dark">Before you visit</p><h2>Bring the details that help.</h2></div><ul><li>Your vehicle year, make, model, and mileage</li><li>The warning light, sound, smell, or driving change you noticed</li><li>When the problem started and whether it is getting worse</li><li>Your preferred day and best callback number</li></ul></div>
+    </section>
+  </main>
+
+  <footer class="shop-footer">
+    <div class="demo-shell footer-layout"><a class="shop-brand footer-shop-brand" href="index.html"><span class="shop-mark" aria-hidden="true">B<span>&amp;</span>B</span><span>Bay &amp; Beacon<strong>Auto Care</strong></span></a><p>Bay &amp; Beacon Auto Care is a fictional business created to demonstrate a conversion-focused auto-shop website.</p><a class="builder-link" href="../index.html#audit">Get a website like this <span aria-hidden="true">→</span></a><p class="copyright">&copy; <span data-demo-year></span> Sample website by Bay State Auto Growth.</p></div>
+  </footer>
+
+  <a class="mobile-call" href="tel:+16175550148">Call the shop <span>(617) 555-0148</span></a>
+  <script src="demo.js"></script>
+</body>
+</html>

@@ -8,3 +8,9 @@ Thumbs.db
 .playwright-cli/
 .wrangler/
 output/playwright/
+output/audit-fixtures/
+
+# Locally generated sales assets and review renders
+output/pdf/
+output/video/
+tmp/

@@ -153,6 +153,14 @@ Ask for publication permission separately:
 
 > May Bay State Auto Growth identify your shop and use the approved before-and-after materials or your exact feedback in a case study? Nothing will be published until you approve the final wording and images.
 
+## Website testimonial publishing workflow
+
+- Ask every eligible customer for honest feedback through the shop's direct Google review link; do not filter the request based on expected sentiment.
+- The shop owner must approve any real testimonial selected for the website and confirm that the wording and customer attribution are accurate.
+- Add approved testimonials manually during a separately scoped website project or an eligible Client Care content update.
+- Never automatically publish an open-form submission, offer an incentive for a positive review, or promise a particular rating or review volume.
+- Keep fictional demo testimonials labeled as samples and never reuse them as client proof.
+
 ## $247 Client Care Plan
 
 Present this only after the initial setup is delivered successfully.
@@ -162,7 +170,7 @@ Present this only after the initial setup is delivered successfully.
 - Google Profile and website health check
 - two owner-approved Google Business Profile updates
 - review-response drafting support
-- one small website content update, limited to 30 minutes
+- one small website content update, limited to 30 minutes; this may include publishing one owner-approved testimonial when the final wording is supplied
 - review-request system check
 - simple monthly activity and observation summary
 
