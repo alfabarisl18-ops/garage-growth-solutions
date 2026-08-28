@@ -1,7 +1,5 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('#nav-menu');
-const auditForm = document.querySelector('[data-audit-form]');
-const formStatus = document.querySelector('[data-form-status]');
 
 document.querySelectorAll('[data-current-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
@@ -23,11 +21,15 @@ if (navToggle && navMenu) {
   });
 }
 
-if (auditForm && formStatus) {
-  auditForm.addEventListener('submit', async (event) => {
+document.querySelectorAll('[data-contact-form]').forEach((contactForm) => {
+  const formStatus = contactForm.querySelector('[data-form-status]');
+
+  if (!formStatus) return;
+
+  contactForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    const submitButton = auditForm.querySelector('button[type="submit"]');
+    const submitButton = contactForm.querySelector('button[type="submit"]');
     const originalButtonContent = submitButton.innerHTML;
     submitButton.disabled = true;
     submitButton.textContent = 'Sending your request…';
@@ -35,9 +37,9 @@ if (auditForm && formStatus) {
     formStatus.textContent = '';
 
     try {
-      const response = await fetch(auditForm.action, {
+      const response = await fetch(contactForm.action, {
         method: 'POST',
-        body: new FormData(auditForm),
+        body: new FormData(contactForm),
         headers: { Accept: 'application/json' }
       });
 
@@ -45,9 +47,9 @@ if (auditForm && formStatus) {
         throw new Error('Form submission failed');
       }
 
-      auditForm.reset();
+      contactForm.reset();
       formStatus.classList.add('is-success');
-      formStatus.textContent = 'Your request was sent. Alpha will follow up with the next step.';
+      formStatus.textContent = contactForm.dataset.successMessage || 'Your request was sent. Alpha will follow up with the next step.';
     } catch (error) {
       formStatus.classList.add('is-error');
       formStatus.textContent = 'Your request could not be sent. Please check your connection and try again.';
@@ -56,4 +58,4 @@ if (auditForm && formStatus) {
       submitButton.innerHTML = originalButtonContent;
     }
   });
-}
+});

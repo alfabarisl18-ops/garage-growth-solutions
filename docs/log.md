@@ -1,5 +1,21 @@
 # Project log
 
+## [2026-08-28] launch | Two-page website approved for production
+
+- Alpha approved publishing the two-page Audit & Trust and Websites & Growth redesign.
+- Rechecked the release locally at phone, tablet, and desktop widths with no horizontal overflow or browser-console errors.
+- Confirmed the fictional demo remains excluded from search indexing and returns visitors to the Website Services section.
+- Published the approved source through the existing `main` branch and Cloudflare Pages Git deployment workflow.
+
+## [2026-08-27] website | Two-page audit and growth service system
+
+- Kept the main page focused on the free audit and Local Trust & Calls Setup while moving separately scoped work to a dedicated Websites & Growth page.
+- Added introductory website and SEO pricing, clear project boundaries, an expanded Bay & Beacon demo showcase, and a separate project-consultation form using the verified Formspree endpoint.
+- Reorganized the setup deliverables into four customer-friendly categories and rebuilt the Alpha Barrie section around direct support, approvals, scope, and client ownership.
+- Preserved the fictional three-page demo itself while changing its return path to the new website-services section.
+- Kept the narrated audit video unpublished, preserved the existing social image, and left production publishing pending Alpha's local review.
+- Confirmed both real Formspree inquiry types returned success using clearly labeled reserved QA data; browser checks also covered success, error, reset, mobile menu, focus, responsive overflow, internal routes, and clean console behavior.
+
 ## [2026-08-26] website | Three-page demo and direct-call path
 
 - Kept the Bay State homepage as a focused sales funnel while adding a clear free-audit versus $297 implementation comparison.

@@ -7,6 +7,7 @@
 - [Sample audit video script](sample-audit-video-script.md) — the timed narration and recording checklist for the fictional before-and-after browser walkthrough.
 - [Client acquisition kit](client-acquisition-kit.md) — prospect criteria, tracker fields, outreach scripts, follow-ups, and weekly scorecard.
 - [Client delivery kit](client-delivery-kit.md) — offer sheet, agreement starter, onboarding, seven-day workflow, handoff, and monthly care offer.
+- [Services catalog](services-catalog.md) — public starting prices, inclusions, exclusions, revision limits, and delivery boundaries for separately scoped services.
 
 ## Project record
 

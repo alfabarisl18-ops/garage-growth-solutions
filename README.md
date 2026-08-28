@@ -1,18 +1,19 @@
 # Bay State Auto Growth
 
-A lightweight static website for Bay State Auto Growth, founded by Alpha Barrie. It is designed to turn Greater Boston auto-shop prospects into free audit requests and showcase a complete fictional auto-shop website.
+A lightweight static website for Bay State Auto Growth, founded by Alpha Barrie. It uses a focused Audit & Trust funnel plus a separate Websites & Growth service page for Greater Boston auto-shop prospects.
 
 Intended custom domain: `baystateautogrowth.com` (connect only after the domain is purchased and the deployment is approved).
 
 ## Public pages
 
-- `/` — focused sales page and free-audit form
+- `/` — Audit & Trust funnel, free-audit sample, $297 setup, founder profile, and audit form
+- `/services.html` — website formats, growth services, starting prices, fictional demo showcase, and project-consultation form
 - `/demo/` — fictional Bay & Beacon Auto Care homepage
 - `/demo/services.html` — fictional shop services and repair process
 - `/demo/contact.html` — fictional shop contact and non-submitting appointment preview
 - `/privacy.html` — inquiry privacy notice
 
-The main form submits to the existing Formspree endpoint. The demo form is intentionally local-only and never transmits data.
+The audit and project-consultation forms submit to the existing Formspree endpoint with distinct subjects. The demo form is intentionally local-only and never transmits data.
 
 The public business call number is `(224) 944-4044` (`tel:+12249444044`). WhatsApp Business is intentionally deferred. The homepage links to a clearly disclosed fictional sample-audit PDF; the silent rehearsal video remains private until Alpha records and approves the narration.
 
