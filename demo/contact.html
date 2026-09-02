@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Fictional Bay & Beacon Auto Care contact and appointment page created as an auto-shop website demonstration by Bay State Auto Growth.">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#122224">
+  <meta name="theme-color" content="#faf4e8" data-theme-light="#faf4e8" data-theme-dark="#10191a">
   <title>Contact | Bay &amp; Beacon Auto Care Demo</title>
   <link rel="icon" href="../assets/favicon.png" type="image/png">
-  <link rel="stylesheet" href="demo.css">
+  <script src="../theme.js?v=20260902-1"></script>
+  <link rel="stylesheet" href="../theme-toggle.css?v=20260902-1">
+  <link rel="stylesheet" href="demo.css?v=20260902-1">
 </head>
 <body>
   <a class="skip-link" href="#demo-main">Skip to main content</a>
@@ -24,7 +26,7 @@
   <header class="demo-header" id="top">
     <nav class="demo-nav demo-shell" aria-label="Demo website navigation">
       <a class="shop-brand" href="index.html" aria-label="Bay and Beacon Auto Care home"><span class="shop-mark" aria-hidden="true">B<span>&amp;</span>B</span><span>Bay &amp; Beacon<strong>Auto Care</strong></span></a>
-      <button class="demo-nav-toggle" type="button" aria-expanded="false" aria-controls="demo-menu"><span class="screen-reader">Open navigation</span><i></i><i></i><i></i></button>
+      <div class="demo-nav-controls"><button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark theme" data-theme-toggle><span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb"><svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg><svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"></path></svg></span></span></button><button class="demo-nav-toggle" type="button" aria-expanded="false" aria-controls="demo-menu"><span class="screen-reader">Open navigation</span><i></i><i></i><i></i></button></div>
       <div class="demo-menu" id="demo-menu">
         <a href="index.html">Home</a><a href="services.html">Services</a><a href="contact.html" aria-current="page">Contact</a><a class="demo-call" href="tel:+16175550148">Call (617) 555-0148</a>
       </div>

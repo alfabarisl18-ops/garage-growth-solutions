@@ -5,20 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Privacy notice for Bay State Auto Growth free-audit and project-consultation inquiries.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#171815">
+  <meta name="theme-color" content="#f3ecdf" data-theme-light="#f3ecdf" data-theme-dark="#111210">
   <title>Privacy Notice | Bay State Auto Growth</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <script src="theme.js?v=20260902-1"></script>
+  <link rel="stylesheet" href="theme-toggle.css?v=20260902-1">
+  <link rel="stylesheet" href="style.css?v=20260902-1">
 </head>
 <body>
   <a class="skip-link" href="#privacy-content">Skip to main content</a>
   <header class="site-header">
-    <nav class="nav shell" aria-label="Privacy page navigation">
+    <nav class="nav shell privacy-nav" aria-label="Privacy page navigation">
       <a class="brand" href="index.html" aria-label="Bay State Auto Growth home">
         <span class="brand-mark" aria-hidden="true">BS</span>
         <span class="brand-name">Bay State <strong>Auto Growth</strong></span>
       </a>
-      <a class="nav-cta" href="index.html#audit">Get a free audit</a>
+      <div class="nav-controls nav-controls--privacy">
+        <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark theme" data-theme-toggle>
+          <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb">
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"></path></svg>
+          </span></span>
+        </button>
+        <a class="nav-cta" href="index.html#audit">Get a free audit</a>
+      </div>
     </nav>
   </header>
   <main class="privacy-main" id="privacy-content">

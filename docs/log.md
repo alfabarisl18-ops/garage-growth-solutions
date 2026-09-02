@@ -94,3 +94,31 @@
 - Preserved the verified Formspree endpoint and removed the invalid nested form and submission-blocking placeholder behavior.
 - Added the privacy notice, original generated imagery, responsive styling, accessible interaction states, and launch operating documents.
 - Kept deployment manual and excluded real prospect/client data from source control.
+
+## [2026-08-31] refinement | Consistent themes and centered service-switch light
+
+- Standardized light and dark surfaces across the main site and fictional demo so cards, forms, headers, footers, and supporting sections follow the active appearance without leftover opposite-theme panels.
+- Replaced hard-coded supporting-text colors with semantic theme colors and a dedicated readable orange text accent while preserving the brighter Bay State orange for light effects and large decorative elements.
+- Reworked the selected service switch so its concealed orange light is centered behind the active lettering, removed the remaining lower-edge orange seam, and enlarged the switch to 400 × 58 px on wide desktops without changing mobile touch targets.
+- Verified all six pages in light and dark modes at 320, 375, 768, 1024, and 1440 px with no horizontal overflow or console errors; also confirmed keyboard theme switching, saved state, 44 px theme controls, and reduced-motion behavior.
+- Kept all changes local; no production deployment was performed.
+
+## [2026-08-31] fix | Complete theme contrast and glass-switch parity
+
+- Added semantic contrast tokens in `style.css` and `demo/demo.css`, then applied them to adaptive cards, forms, price options, process content, supporting text, and status messages across the main site and fictional demo.
+- Explicitly themed the “02 · Complete presence” price card and corrected inherited light-mode consultation and offer-list colors so every rendered text audit passes in both appearances.
+- Made the light-mode service switch match the dark-mode interaction: a borderless recessed track, subtle glass edge, centered black-orange active lettering, and the same restrained orange inactive hover/focus light.
+- Versioned shared CSS and JavaScript references with `?v=20260831-3` on all six pages so browsers fetch the corrected theme assets instead of stale copies.
+- Verified all six pages at the required responsive widths with no overflow or console errors, and completed a rendered contrast audit with no failures in either theme.
+
+## [2026-09-02] refinement | Clearer small typography and warmer light mode
+
+- Sources: `S-20260902-READABILITY` and `S-20260902-CSS` in `docs/sources.md`. Pages affected: this log and the source ledger; the index now links to the ledger.
+- Established 14px small text, 15px form labels/supporting notes, and 16px body copy/list defaults using shared typography tokens in both stylesheets. Preserved brand marks, existing font families, large headings, and large price sizes; opened smaller bold labels and condensed subheadings with more letter/line spacing.
+- Applied the approved cream, warm-gray panel, darker supporting-text, and border palette only to light mode. Corrected pale light-mode eyebrow inheritance and used the existing darker Bay State orange for headline accents to meet contrast on cream.
+- Increased service-switch labels to 14px with mobile wrapping; preserved glass, lighting, focus, and selection behavior. Widened the main desktop header and prevented awkward phone/navigation wrapping. Adjusted demo metric-card padding and column sizing at narrow widths.
+- Updated theme metadata and shared asset references to `?v=20260902-1` on all six pages; no JavaScript behavior or production dependencies changed.
+- Passed 84 page/theme/viewport layout cases at 320, 375, 720, 768, 1024, 1280, and 1440px, with no content below 14px outside preserved brand marks, no text overflow, no header overlap, and no page errors. The 720px case checks the layout equivalent of 200% zoom on a 1440px screen; native browser toolbar zoom was unavailable in the headless test browser.
+- Completed 1,236 rendered text/symbol contrast checks with no remaining failures after opening FAQ answers and allowing theme styles to settle; glass/photographic overlays require visual review rather than a flat-background calculation. Rating stars use the 3:1 graphical contrast threshold.
+- Verified matching inactive hover light in both themes, 3px keyboard focus, service-page navigation and theme persistence, 44px appearance targets, mobile menu bounds, and reduced-motion transitions. `node --check theme.js` and `git diff --check` passed. Changes remain local; no deployment performed.
+- Visually reviewed desktop/mobile screenshots of the switch/header, pricing cards, demo hero overlays, sample form, and privacy content in both appearances. Rechecked the privacy header after theme styles settled; its audit link remains readable. Native 200% toolbar zoom remains a manual verification item.

@@ -12,3 +12,4 @@
 ## Project record
 
 - [Change log](log.md) — chronological record of significant website and operating-system changes.
+- [Source ledger](sources.md) — provenance for recorded design decisions and implementation snapshots.

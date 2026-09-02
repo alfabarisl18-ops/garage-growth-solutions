@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Bay State Auto Growth helps independent auto repair shops in Greater Boston build online trust, generate more calls, and turn local searches into booked jobs.">
-  <meta name="theme-color" content="#171815">
+  <meta name="theme-color" content="#f3ecdf" data-theme-light="#f3ecdf" data-theme-dark="#111210">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Bay State Auto Growth | More trust. More calls. More booked jobs.">
   <meta property="og:description" content="Practical Google Profile, website trust, and review-system improvements for independent auto shops in Greater Boston.">
@@ -17,7 +17,9 @@
   <title>Bay State Auto Growth | Auto Shop Growth in Greater Boston</title>
   <link rel="canonical" href="https://garage-growth-solutions.pages.dev/">
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <script src="theme.js?v=20260902-1"></script>
+  <link rel="stylesheet" href="theme-toggle.css?v=20260902-1">
+  <link rel="stylesheet" href="style.css?v=20260902-1">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -28,14 +30,24 @@
         <span class="brand-mark" aria-hidden="true">BS</span>
         <span class="brand-name">Bay State <strong>Auto Growth</strong></span>
       </a>
-      <div class="page-switch" aria-label="Choose a Bay State service page">
+      <div class="page-switch page-switch--audit" aria-label="Choose a Bay State service page">
+        <span class="page-switch-light" aria-hidden="true"></span>
+        <span class="page-switch-slider" aria-hidden="true"></span>
         <a class="is-active" href="index.html" aria-current="page">Audit &amp; Trust</a>
         <a href="services.html">Websites &amp; Growth</a>
       </div>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-        <span class="sr-only">Open navigation</span>
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-controls">
+        <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark theme" data-theme-toggle>
+          <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb">
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"></path></svg>
+          </span></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Open navigation</span>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
       <div class="nav-menu" id="nav-menu">
         <a href="#offer">The setup</a>
         <a href="#sample-audit">Sample audit</a>
