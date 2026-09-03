@@ -122,3 +122,14 @@
 - Completed 1,236 rendered text/symbol contrast checks with no remaining failures after opening FAQ answers and allowing theme styles to settle; glass/photographic overlays require visual review rather than a flat-background calculation. Rating stars use the 3:1 graphical contrast threshold.
 - Verified matching inactive hover light in both themes, 3px keyboard focus, service-page navigation and theme persistence, 44px appearance targets, mobile menu bounds, and reduced-motion transitions. `node --check theme.js` and `git diff --check` passed. Changes remain local; no deployment performed.
 - Visually reviewed desktop/mobile screenshots of the switch/header, pricing cards, demo hero overlays, sample form, and privacy content in both appearances. Rechecked the privacy header after theme styles settled; its audit link remains readable. Native 200% toolbar zoom remains a manual verification item.
+
+## [2026-09-03] release | Theme and readability production verification
+
+- Sources: `S-20260903-RELEASE` in `docs/sources.md`. Alpha approved production publication with the September 2 "Merge/ deploy" request.
+- Committed the approved website work on the existing `main` branch as `9e2f43d5fa1bbf769735208f7030ed8f369011f9`; no separate branch needed merging. Unrelated client-sales documents and generation tools remain local and uncommitted.
+- Cloudflare Git deployment `f48ad291-7b14-4ad9-9591-0848cb45b4f5` completed successfully on September 2 at 21:56:44 UTC; confirmed it remains the production deployment on September 3. Live site: https://garage-growth-solutions.pages.dev/.
+- All six public HTML pages and six CSS/JavaScript files returned HTTP 200 and matched the approved local source after normalizing line endings. All pages reference the refreshed theme assets.
+- Passed 24 live page/theme/viewport checks (six pages, two themes, 375px and 1440px): no horizontal overflow, theme-state mismatches, page errors, or console errors. Service-page navigation and theme persistence across navigation/reload also passed. No live forms were submitted.
+- Syntax checks passed for `theme.js`, `script.js`, and `demo/demo.js`. Corrected a Windows line ending in the documentation index detected by the staged whitespace check. Native 200% browser zoom remains a manual check; production metrics were not monitored continuously.
+- Rollback target: previous successful Pages deployment `e23e9eea-a4f0-4d9b-ac55-2ec636930a65`, source `e2a640414a05fe143cd7026cc6c2e03ba1727d05`. Use it if page loading, theme initialization, or navigation regresses.
+- This documentation-only follow-up uses Cloudflare's documented deployment-skip commit prefix; it does not change website files or replace the verified production release.

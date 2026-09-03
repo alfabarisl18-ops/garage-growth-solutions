@@ -20,3 +20,14 @@ This ledger begins with the September 2026 readability refinement. Older project
 - `demo/demo.css` SHA-256: `B1909044092447ACA6681932986EF811D32B9DB1C335A4145B7D4C3C47348612`.
 - Permission: local repository source; no external code or assets incorporated.
 - Used by: `docs/log.md`, entry “Clearer small typography and warmer light mode.”
+
+## S-20260903-RELEASE — Approved deployment and live verification
+
+- Kind: user publishing decision, code snapshot, and observed release verification.
+- Approval: Alpha's September 2, 2026 "Merge/ deploy" request in this Codex task.
+- Source snapshot: repository commit `9e2f43d5fa1bbf769735208f7030ed8f369011f9` (all six pages and shared styles/theme scripts).
+- Deployment evidence: authenticated Pages project API for `garage-growth-solutions`, deployment `f48ad291-7b14-4ad9-9591-0848cb45b4f5`; inspected September 2 and reconfirmed September 3, 2026.
+- Verification evidence: public HTTP/source comparisons and standalone browser checks recorded in the release log; existing in-app browser control was unavailable. Screenshot: ignored local artifact `output/playwright/production-release-dark.jpg`.
+- Operational reference: https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/#skipping-a-build-via-a-commit-message (Cloudflare official documentation, retrieved September 2, 2026; linked, not copied).
+- Permission: approved publication of the existing user-owned website; unrelated local documents excluded.
+- Used by: `docs/log.md`, entry "Theme and readability production verification."
